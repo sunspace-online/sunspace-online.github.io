@@ -1,7 +1,7 @@
 (function(){
 
     var createEmbedFrame = function(){
-      var uid                   = "JSFEMB_" + (~~(new Date().getTime() / 86400000))
+      var uid                   = "MWSSA_" + (~~(new Date().getTime() / 86400000))
       var uriOriginal           = "https://sunspace-online.github.io/bootstrap.js"
       var uriOriginalNoProtocol = uriOriginal.split("//").pop()
       var uriEmbedded           = "https://sunspace-online.github.io/"
