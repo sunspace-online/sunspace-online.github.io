@@ -5,14 +5,13 @@
       var uriOriginal           = "https://sunspace-online.github.io/bootstrap.js"
       var uriOriginalNoProtocol = uriOriginal.split("//").pop()
       var uriEmbedded           = "https://sunspace-online.github.io/"
-      var currentSlug           = "pza41w9c"
       var target                = document.querySelector("script[src*='" + uriOriginalNoProtocol + "']")
       var iframe                = document.createElement("iframe")
   
       iframe.src               = uriEmbedded
       iframe.id                = uid
       iframe.width             = "100%"
-      iframe.height            = "0"
+      iframe.height            = "600"
       iframe.frameBorder       = "0"
       iframe.allowtransparency = true
       iframe.sandbox           = "allow-modals allow-forms allow-same-origin allow-scripts allow-popups allow-top-navigation-by-user-activation allow-downloads"
@@ -21,10 +20,8 @@
       target.parentNode.insertBefore(iframe, target.nextSibling)
   
       var setHeight = function(data){
-        if (data.slug === currentSlug) {
           var height = data.height <= 0 ? 600 : data.height + 50
           iframe.height = height
-        }
       }
   
       var listeners = function(event){
