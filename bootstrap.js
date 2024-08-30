@@ -15,7 +15,7 @@
       iframe.frameBorder       = "0"
       iframe.allowtransparency = true
       iframe.sandbox           = "allow-modals allow-forms allow-same-origin allow-scripts allow-popups allow-top-navigation-by-user-activation allow-downloads"
-      iframe.allow             = "midi; geolocation; microphone; camera; display-capture; encrypted-media; speaker-selection;"
+      iframe.allow             = "fullscreen; midi; geolocation; microphone; camera; display-capture; encrypted-media; speaker-selection;"
   
       target.parentNode.insertBefore(iframe, target.nextSibling)
   
